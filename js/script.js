@@ -1,3 +1,36 @@
+const animItems = document.querySelectorAll('._anim-items');
+console.log('hello');
+
+
+
+if (animItems.length > 0) {
+    window.addEventListener('scroll', animOnScroll);
+    function animOnScroll(){
+        for (let i = 0; i < animItems.length; i++){
+            const animItem = animItems[i];
+            const animItemHeight = animItem.offsetHeight;
+            const animItemOffset = offset(animItem).top;
+            const animStart = 4;
+
+            let animItemPoint = window.innerHeight - animItemHeight / animStart;
+            if (animItemHeight > window.innerHeight){
+                animItemPoint=window.innerHeight - window.innerHeight / animStart;
+            }
+
+            if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+                animItem.classList.add('_active');
+            }
+        }
+    }
+    function offset(el){
+        const rect = el.getBoundingClientRect(),
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
+    }
+    animOnScroll();
+}
+
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
@@ -12,63 +45,3 @@ for (let anchor of anchors) {
     })
   })
 }
-
-//________________________________________________________
-
-var nav = document.querySelector('.main-nav');
-var close = nav.querySelector('.main-nav__close')
-
-function closeNav(){
-    nav.addEventListener('click', function(){
-        this.classList.remove('main-nav_active');
-        this.classList.add('main-nav_passiv');
-        clickNav();
-    })
-}
-
-function clickNav(){
-    nav.addEventListener('click', function(){
-        this.classList.add('main-nav_active');
-        this.classList.remove('main-nav_passiv');
-        closeNav();
-    })
-}
-
-window.addEventListener('scroll', function(e){
-    // console.log(window.scrollY);
-    // if (window.scrollY > 2) {
-    //     nav.classList.add('main-nav_passiv');
-    //     clickNav();
-    // }else{
-    //     nav.classList.remove('main-nav_passiv');
-    // }
-    if (window.scrollY == 0) {
-        nav.classList.remove('main-nav_passiv');
-        nav.classList.remove('main-nav_active');
-    }
-    else if(!nav.classList.contains('main-nav_active') && !nav.classList.contains('main-nav_passiv')){
-        nav.classList.add('main-nav_passiv');
-        clickNav();
-    }
-    else if (nav.classList.contains('main-nav_active')){
-        nav.classList.remove('main-nav_passiv');
-    }
-    else if (nav.classList.contains('main-nav_passiv')){
-        nav.classList.remove('main-nav_active');
-    }
-
-    });
-
-
-
-// var scope = document.querySelectorAll('.scope__menu__item');
-
-// function scopesAktiv(nummer){
-//     scope[nummer].addEventListener('click', function(){
-//         this.classList.toggle('scope__menu__item_active');
-//     })
-// }
-
-// for (var i = 0; i < scope.length; i++){
-//     scopesAktiv(i);
-// }

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>anfiig | frontend</title>
+    <meta name="description" content="Portfolio von Andrei Filippov | Frontend">
+    <meta name="keywords" content="portfolio, praktikum, frontend, web">
+    <meta name="author" content="Filippov Andrei, anfiig">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+
+
+    <link rel="icon" href="favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/manifest.webmanifest">
+</head>
+<body>
+    <header class="header">
+        <aside class="contacts" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00" data-aos-once="true">
+            <a href="https://t.me/anfiig" class="contacts__link" target="_blank">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="#fff" xmlns="http://www.w3.org/2000/svg" class="contacts__icon">
+                    <title>Telegram icon, link to contact</title>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M49.4425 11.075C50.0603 10.815 50.7365 10.7253 51.4007 10.8153C52.0649 10.9053 52.6929 11.1717 53.2192 11.5867C53.7455 12.0018 54.151 12.5503 54.3934 13.1752C54.6358 13.8001 54.7063 14.4786 54.5975 15.14L48.9275 49.5325C48.3775 52.85 44.7375 54.7525 41.695 53.1C39.15 51.7175 35.37 49.5875 31.97 47.365C30.27 46.2525 25.0625 42.69 25.7025 40.155C26.2525 37.9875 35.0025 29.8425 40.0025 25C41.965 23.0975 41.07 22 38.7525 23.75C32.9975 28.095 23.7575 34.7025 20.7025 36.5625C18.0075 38.2025 16.6025 38.4825 14.9225 38.2025C11.8575 37.6925 9.01499 36.9025 6.69499 35.94C3.55999 34.64 3.71249 30.33 6.69249 29.075L49.4425 11.075Z"/>
+                </svg>                    
+            </a>
+            <a href="mailto:anfiig.de@gmail.com" class="contacts__link" target="_blank">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="contacts__icon contacts__stroke-icon">
+                    <title>Mail icon, link to contact</title>
+                    <path d="M30.5 47H13C11.6739 47 10.4021 46.4732 9.46447 45.5355C8.52678 44.5979 8 43.3261 8 42V17C8 15.6739 8.52678 14.4021 9.46447 13.4645C10.4021 12.5268 11.6739 12 13 12H48C49.3261 12 50.5979 12.5268 51.5355 13.4645C52.4732 14.4021 53 15.6739 53 17V30.75" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.5 14.5L30.5 32L50.5 14.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                    
+            </a>
+        </aside>
+
+        <h1 class="header__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+            Bewerbung fürs Praktikum
+            <span class="header__name">Filippov Andrei</span>
+        </h1>
+
+        <a href="#about-me" class=" header__button unselectable">
+            <img src="icons/icon-arrow.svg" alt="icon down arrow to the following sections" class="header__arrow">
+        </a>
+    </header>
+
+    <main class="main">
+        <section class="section section_sticky-wrapper about-me scroll-text-box" id="about-me">
+            <h2 class="section-title about-me__title">About me</h2>
+            
+            <div class="sticky-wrapper">
+                <span class="sticky-wrapper__text about-me__fixed-me">Ich</span>
+                <div class="about-me__info">
+                    <p class="about-me__text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-once="true">
+                        Mein Name ist Andrei. Ich bin ein engagierter Frontend-Entwickler mit großer Begeisterung für moderne Webtechnologien und benutzerzentriertes Design. Derzeit besuche ich das <a href="https://www.studienkolleg.uni-halle.de/" class="about-me__link" target="_blank">Studienkolleg Halle</a> und werde bald ein Studium der Wirtschaftsinformatik an der Universität beginnen. Schon jetzt verfüge ich über fundierte Kenntnisse in der Webentwicklung und strebe danach, diese weiter einzusetzen und zu vertiefen.
+                    </p>
+                    <div class="slider about-me__slider" id="slider" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+                        <img src="img/photo-me-1.jpeg" alt="photo: Andrei Filippov" class="slide about-me__slide">
+                        <img src="img/photo-me-2.jpeg" alt="photo: Andrei Filippov" class="slide about-me__slide">
+                        <img src="img/photo-me-3.jpeg" alt="photo: Andrei Filippov" class="slide about-me__slide">
+                        <img src="img/photo-me-4.jpeg" alt="photo: Andrei Filippov" class="slide about-me__slide">
+                        <img src="img/photo-me-5.jpeg" alt="photo: Andrei Filippov" class="slide about-me__slide">
+
+                        <button aria-label="previous slide" class="slider-button slider-button_prev about-me__slider-button about-me__slider-button_prev"></button>
+                        <button aria-label="next slide" class="slider-button slider-button_next about-me__slider-button about-me__slider-button_next"></button>
+                    </div>
+                    <p class="about-me__text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-once="true">
+                        In Russland konnte ich durch zahlreiche Wettbewerbe meine Teamfähigkeit und mein Projektmanagement verbessern. Besonders prägend war mein zweimonatiges Praktikum bei <a href="https://www.adict.ru/" class="about-me__link" target="_blank">adict</a>, wo ich nicht nur technische Probleme löste, sondern auch wesentlich zum Teamerfolg beitrug. Ich suche eine Position, in der ich meine Fähigkeiten in einer dynamischen Umgebung wie der Ihren weiterentwickeln kann.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section stack">
+            <h2 class="section-title">Stack</h2>
+            <div class="stack-grid">
+                <div class="stack-grid__el" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-once="true">
+                    <span class="stack-grid__title">HTML</span>
+                    <img src="icons/tech-html.svg" alt="HTML" class="stack-grid__icon">
+                </div>
+
+                <div class="stack-grid__el" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+                    <span class="stack-grid__title">CSS</span>
+                    <img src="icons/tech-css.svg" alt="CSS" class="stack-grid__icon">
+                </div>
+
+                <div class="stack-grid__el" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
+                    <span class="stack-grid__title">JS</span>
+                    <img src="icons/tech-js.svg" alt="JavaScript" class="stack-grid__icon">
+                </div>
+
+                <div class="stack-grid__el" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" data-aos-once="true">
+                    <span class="stack-grid__title">PUG</span>
+                    <img src="icons/tech-pug.svg" alt="PUG" class="stack-grid__icon">
+                </div>
+
+                <div class="stack-grid__el" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
+                    <span class="stack-grid__title">BOOTSTRAP</span>
+                    <img src="icons/tech-bootstrap.svg" alt="BOOTSTRAP" class="stack-grid__icon">
+                </div>
+
+                <div class="stack-grid__el" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-once="true">
+                    <span class="stack-grid__title">SCSS/SASS</span>
+                    <img src="icons/tech-sass.svg" alt="SCSS and SASS" class="stack-grid__icon">
+                </div>
+
+                <div class="stack-grid__el" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+                    <span class="stack-grid__title">GIT/GITHUB</span>
+                    <img src="icons/tech-github.svg" alt="GIT and GITHUB" class="stack-grid__icon">
+                </div>
+
+                <div class="stack-grid__el" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350" data-aos-once="true">
+                    <span class="stack-grid__title">GULP</span>
+                    <img src="icons/tech-gulp.svg" alt="GULP" class="stack-grid__icon">
+                </div>
+
+                <div class="stack-grid__el" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
+                    <span class="stack-grid__title"><a href="https://getbem.com/" class="stack-grid__link" target="_blank">BEM</a></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section works">
+            <h2 class="section-title">Meine Werke</h2>
+            <ul class="works__list">
+                <li class="works__el works__el_maket" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-once="true">
+                    <a href="https://anfiig.github.io/sites/puls/" class="works__link" target="_blank">anfiig.github.io/sites/puls/</a>
+                </li>
+                <li class="works__el works__el_maket" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+                    <a href="https://anfiig.github.io/sites/uber/" class="works__link" target="_blank">anfiig.github.io/sites/uber/</a>
+                </li>
+                <li class="works__el works__el_mine" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
+                    <a href="https://anfiig.github.io/sites/scheduler/" class="works__link" target="_blank">anfiig.github.io/sites/scheduler/</a>
+                </li>
+                <li class="works__el works__el_mine" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" data-aos-once="true">
+                    <a href="https://anfiig.github.io/sites/sputnik/" class="works__link" target="_blank">anfiig.github.io/sites/sputnik/</a>
+                </li>
+                <li class="works__el works__el_mine" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
+                    <a href="https://anfiig.github.io/internship" class="works__link" target="_blank">anfiig.github.io/internship</a>
+                </li>
+                <li class="works__el works__el_maket" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-once="true">
+                    <a href="https://anfiig.github.io/sites/adict/" class="works__link" target="_blank">anfiig.github.io/sites/adict/</a>
+                </li>
+                <li class="works__el works__el_maket" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+                    <a href="https://anfiig.github.io/sites/sclassic/" class="works__link" target="_blank">anfiig.github.io/sites/sclassic/</a>
+                </li>
+                <li class="works__el works__el_mine" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350" data-aos-once="true">
+                    <a href="https://anfiig.github.io/" class="works__link" target="_blank">anfiig.github.io/</a>
+                </li>
+            </ul>
+            <div class="works__details">
+                <span class="works__abbr works__abbr_green">Meine Projekten</span>
+                <span class="works__abbr works__abbr_pink">Makets</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="mailto:anfiig.de@gmail.com" class="footer__mail" >anfiig.de@gmail.com</a>
+        
+        <aside class="contacts contacts_footer">
+            <a href="https://t.me/anfiig" class="contacts__link" target="_blank">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="#fff" xmlns="http://www.w3.org/2000/svg" class="contacts__icon contacts__icon_footer">
+                    <title>Telegram icon, link to contact</title>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M49.4425 11.075C50.0603 10.815 50.7365 10.7253 51.4007 10.8153C52.0649 10.9053 52.6929 11.1717 53.2192 11.5867C53.7455 12.0018 54.151 12.5503 54.3934 13.1752C54.6358 13.8001 54.7063 14.4786 54.5975 15.14L48.9275 49.5325C48.3775 52.85 44.7375 54.7525 41.695 53.1C39.15 51.7175 35.37 49.5875 31.97 47.365C30.27 46.2525 25.0625 42.69 25.7025 40.155C26.2525 37.9875 35.0025 29.8425 40.0025 25C41.965 23.0975 41.07 22 38.7525 23.75C32.9975 28.095 23.7575 34.7025 20.7025 36.5625C18.0075 38.2025 16.6025 38.4825 14.9225 38.2025C11.8575 37.6925 9.01499 36.9025 6.69499 35.94C3.55999 34.64 3.71249 30.33 6.69249 29.075L49.4425 11.075Z"/>
+                </svg>                    
+            </a>
+            <a href="mailto:anfiig.de@gmail.com" class="contacts__link" target="_blank">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="contacts__icon contacts__stroke-icon contacts__icon_footer">
+                    <title>Mail icon, link to contact</title>
+                    <path d="M30.5 47H13C11.6739 47 10.4021 46.4732 9.46447 45.5355C8.52678 44.5979 8 43.3261 8 42V17C8 15.6739 8.52678 14.4021 9.46447 13.4645C10.4021 12.5268 11.6739 12 13 12H48C49.3261 12 50.5979 12.5268 51.5355 13.4645C52.4732 14.4021 53 15.6739 53 17V30.75" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.5 14.5L30.5 32L50.5 14.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                    
+            </a>
+        </aside>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
